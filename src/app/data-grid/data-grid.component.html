@@ -1,0 +1,10 @@
+<div class="flex-grid checkbox fixed header">
+  <supre-data-grid-header class="supre-data-grid-header"></supre-data-grid-header>
+  <div class="body">
+    <div class="row" *ngFor="let items of dataSource | async let i=index">
+      <supre-data-grid-column  class="width-4" [isCheckbox]="true" [index]="i"></supre-data-grid-column>
+      <supre-data-grid-column *ngFor="let item of items let i=index" [ngClass]="{'width-22': i===0, 'width-8': i===2,'width-10': i===3}">{{item}}</supre-data-grid-column>
+    </div>
+
+  </div>
+</div>

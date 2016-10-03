@@ -1,0 +1,13 @@
+$numCol:8;
+@for $i from 1 through $numCol {
+  .width-#{2 * $i}{
+      max-width: 2% * $i;
+   }
+}
+
+$numCol:24;
+@for $i from 8 through $numCol {
+  .width-#{2 * $i}{
+      min-width: 2% * $i;
+   }
+}

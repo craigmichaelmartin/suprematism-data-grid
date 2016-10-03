@@ -1,0 +1,13 @@
+<div [ngSwitch]="isCheckbox">
+  <div *ngSwitchCase="true">
+    <div class="col">
+      <input type="checkbox" name="'row'+index" [id]="'row'+index">
+      <label [attr.for]="'row'+index"></label>
+    </div>
+  </div>
+  <div *ngSwitchDefault>
+    <div class="col">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

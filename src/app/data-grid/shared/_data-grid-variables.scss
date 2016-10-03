@@ -1,0 +1,14 @@
+@import '_data-grid-funcs';
+
+$border: 1px solid rgba(217, 217, 217, 1);
+$grid-stripe-color:rgba(240, 248, 253, .6);
+$grid-header-background-color: #f0f0f0;
+$grid-header-text-color:#8c8d8e;
+$display-drop-shadow: true;
+$text-transform: uppercase;
+// controls drop shadow for header
+$drop-shadow:setFilter(true);
+$body-row-height:46px;
+$grid-body-height:100vh - 5;
+
+

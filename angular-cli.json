@@ -12,9 +12,11 @@
       "main": "main.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
-      "prefix": "app",
+      "prefix": "atp",
       "mobile": false,
       "styles": [
+        "../node_modules/concise.css/dist/concise.min.css",
+        "../node_modules/ionicons/dist/css/ionicons.min.css",
         "styles.css"
       ],
       "scripts": [],
@@ -38,7 +40,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "prefixInterfaces": false
   }
 }

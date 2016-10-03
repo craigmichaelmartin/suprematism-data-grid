@@ -1,0 +1,27 @@
+@import '../shared/_data-grid-widths';
+@import '../shared/_data-grid-checkbox';
+
+:host {
+    height: 30px;
+    background-color: $grid-header-background-color;
+    text-transform: $text-transform;
+    font-weight: bold;
+    color: $grid-header-text-color;
+    label:before{
+        margin-top: 0px !important;
+    };
+    filter: $drop-shadow;
+    z-index: 100;
+    display: flex;
+    flex: 1;
+    justify-content: start-end;
+    box-sizing: border-box;
+    .col {
+        padding-left: 5px;
+        flex: 1;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        @extend %checkbox;
+    }
+    
+}

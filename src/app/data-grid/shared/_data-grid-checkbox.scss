@@ -1,0 +1,29 @@
+@import '_data-grid-variables';
+%checkbox{
+    &:nth-child(2) {
+        border-left: none;
+    }
+    input[type="checkbox"] {
+        display: none;
+        
+    }
+    label{
+        line-height: normal;
+        &:before {
+            display: inline-block;
+            margin-top: 8px;
+            content: "";
+            height: 16px;
+            width: 16px;
+            border: $border;
+            border-radius: 2px;
+            background-color: #ffffff;
+        }
+    }
+    input[type=checkbox]:checked+label:before {
+        content: "\2714";
+        font-size: 15px;
+        color: #000;
+        text-align: center;
+    }
+}

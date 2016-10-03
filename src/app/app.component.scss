@@ -1,0 +1,7 @@
+$bp-small:1280px;
+$non-responsive:false;
+$container-width:1280px;
+@import '../../node_modules/concise.css/src/core/utils/_atgrid.scss';
+// .col {
+//   @include column(1/2, false)
+// }

@@ -1,0 +1,17 @@
+@import '../shared/_data-grid-checkbox';
+
+:host {
+    border-bottom: $border;
+    border-left: $border;
+    padding-left: 5px;
+    flex: 1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    &:first-child {
+        border-left: none;
+    }
+    &:not(:last-of-type) {
+        border-right: none;
+    }
+    @extend %checkbox;
+}

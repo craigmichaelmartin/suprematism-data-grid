@@ -1,0 +1,93 @@
+@import 'shared/_data-grid-variables';
+@import 'shared/_data-grid-widths';
+@import 'shared/_data-grid-checkbox';
+@import 'shared/_data-grid-funcs';
+
+body {
+    background-color: #ffffff;
+    
+}
+
+:host .flex-grid {
+    font-family: verdana;
+    font-size: 10pt;
+    @include container(10,1280px);
+    .border {
+        border: $border;
+    }
+
+    .body {
+        .row{
+            &:nth-child(2n){
+                background-color: $grid-stripe-color;
+            }
+            height: $body-row-height;
+        }
+        .col{
+            &:not(:first-child){
+                padding-top: 11.5px
+            }
+        }
+    }
+    .row{
+        display: flex;
+        flex: 1;
+        justify-content: start-end;
+        box-sizing: border-box;
+        &:last-child{
+            .col{
+                border-bottom: none; /* remove the border bottom of the last columns*/
+            }
+        }
+        /* remove the border top of all columns  */
+        &:nth-of-type(n){
+            .col{
+                border-top: none; 
+            }
+        }
+        &.header{
+            .col {
+                border-right: none;
+                border-left: none;
+                border-bottom: none;
+            }
+        }
+        .col {
+            border-bottom: $border;
+            border-left: $border;
+            padding-left: 5px;
+            flex: 1;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            &:first-child {
+                border-left: none;
+            }
+            &:not(:last-of-type) {
+                border-right: none;
+            }
+        }
+        
+    }
+    /* add height for a table with a fixed header */
+    &.fixed.header{
+        .body{
+            max-height: $grid-body-height;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+    &.header.checkbox{
+        .row{
+            .col{
+                @extend %checkbox;
+            }
+        }
+    }
+}
+
+.text {
+    text-align: left;
+}
+.number {
+    text-align: right;
+}
