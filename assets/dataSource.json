@@ -1,15 +1,26 @@
 {
-    "headers": [
-        "Segement Name",
-        "Description",
-        "Category",
-        "Audience",
-        "Data Source",
-        "Created",
-        "Owner"
-    ],
+    "headers": {
+        "parent": [
+            "Segement Name",
+            "Description",
+            "Category",
+            "Audience",
+            "Data Source",
+            "Created",
+            "Owner"
+        ],
+        "child": [
+            {"child":true},
+            "Name of Active Child column",
+            "column",
+            "column",
+            "column"
+        ]
+    },
+    
     "rows": [
         [
+            {"parent":true,"childNo":4},
             "Insurance shoppers with <1 home and incomes < 100,000",
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio amet voluptates",
             "ion-android-home",
@@ -19,22 +30,32 @@
             "Spotlight"
         ],
         [
-            "Insurance shoppers",
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio amet voluptates",
-            "ion-ios-cart",
-            "10,342,012",
-            "Experian",
-            "9/12/2014",
-            "Spotlight"
+            {"child":true},
+            "Number of adults in living unit (2 adults)",
+            "ion-cash",
+            "61345012",
+            "Experian Auto"
         ],
         [
-            "Insurance shoppers",
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio amet voluptates",
-            "ion-umbrella",
-            "10,342,012",
-            "Experian",
-            "9/12/2014",
-            "Spotlight"
+            {"child":true},
+            "MOR Bank: Upscale Merchandise Buyer (purchased 1+ times)",
+            "ion-ios-americanfootball",
+            "11345012",
+            "GulfNow"
+        ],
+        [
+            {"child":true},
+            "Own or Lease 2+ Vehicles - Exp 2+",
+            "ion-cash",
+            "61345012",
+            "Experian Auto"
+        ],
+        [
+            {"child":true},
+            " Interest In Sports",
+            "ion-android-home",
+            "11345012",
+            "GulfNow"
         ],
         [
             "Insurance shoppers",

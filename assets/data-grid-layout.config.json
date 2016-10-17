@@ -1,31 +1,55 @@
 {
-    "columnConfig":{
-        "options":{
-            "columnStart":2,
-            "headerColumnStart":1
+    "columnConfig": {
+        "options": {
+            "columnStart": 2,
+            "headerColumnStart": 1
         },
-        "defaults":{
-            "type":"string",
-            "align":"left"
+        "defaults": {
+            "type": "string",
+            "align": "left"
         },
-        "column-0":{
-            "width": 30
+        "parent": {
+            "column-0": {
+                "width": 30,
+                "border": "no-border-left"
+            },
+            "column-1": {
+                "width": 24
+            },
+            "column-2": {
+                "type": "icon",
+                "align": "center",
+                "width": 8
+            },
+            "column-3": {
+                "type": "number",
+                "align": "right",
+                "width": 8
+            },
+            "column-5": {
+                "type": "date",
+                "align": "left"
+            }
         },
-        "column-1":{
-            "width": 24
-        },
-        "column-2":{
-            "type":"icon",
-            "align":"center",
-            "width": 8
-        },
-        "column-3":{
-            "type":"number",
-            "align":"right"
-        },
-        "column-5":{
-            "type":"date",
-            "align":"left"
+        "child": {
+            "column-0": {
+                "width": 58,
+                "css": "{padding-left: 4%}"
+            },
+            "column-1": {
+                "type": "icon",
+                "align": "center",
+                "width": 8
+            },
+            "column-2": {
+                "type": "number",
+                "align": "right",
+                "width": 8
+            },
+            "column-4": {
+                "type": "date",
+                "align": "left"
+            }
         }
     }
 }
