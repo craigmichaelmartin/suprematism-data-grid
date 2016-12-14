@@ -1,0 +1,61 @@
+{
+    "columnConfig": {
+        "options": {
+            "columnStart": 2,
+            "headerColumnStart": 1
+        },
+        "defaults": {
+            "type": "string",
+            "align": "left"
+        },
+        "parent": {
+            "column-0": {
+                "width": 30,
+                "border": "no-border-left"
+            },
+            "column-1": {
+                "width": 24
+            },
+            "column-2": {
+                "align": "left"
+            },
+            "column-3": {
+                "type": "icon",
+                "align": "center",
+                "width": 8
+            },
+            "column-4": {
+                "type": "number",
+                "align": "right",
+                "width": 8
+            },
+            "column-6": {
+                "type": "date",
+                "align": "left"
+            }
+        },
+        "child": {
+            "column-0": {
+                "width": 54,
+                "border": "no-border-left"
+            },
+            "column-1": {
+                "align": "left"
+            },
+            "column-2": {
+                "type": "icon",
+                "align": "center",
+                "width": 8
+            },
+            "column-3": {
+                "type": "number",
+                "align": "right",
+                "width": 8
+            },
+            "column-5": {
+                "type": "date",
+                "align": "left"
+            }
+        }
+    }
+}

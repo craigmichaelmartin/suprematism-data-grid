@@ -1,0 +1,145 @@
+{
+    "headers": {
+        "parent": [
+            "Segment Name",
+            "Description",
+            "Category",
+            "Audience",
+            "Data Source",
+            "Created",
+            "Owner"
+        ],
+        "child": [
+            {
+                "child": "header"
+            },
+            "Name of Active Child column",
+            "column",
+            "column",
+            "column"
+        ]
+    },
+    "rows": [
+        [
+            {
+                "parent": true,
+                "childNo": 4
+            },
+            "Open parent with selection. Checkboxes for child rows ",
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio amet voluptates",
+            "ion-android-home",
+            "10,342,012",
+            "Experian",
+            "9/12/2014",
+            "Spotlight"
+        ],
+        [
+            {
+                "child": true,
+                "selectable":true
+            },
+            "Number of adults in living unit (2 adults)",
+            "ion-cash",
+            "61345012",
+            "Experian Auto"
+        ],
+        [
+            {
+                "child": true,
+                "selectable":true
+            },
+            "MOR Bank: Upscale Merchandise Buyer (purchased 1+ times)",
+            "ion-ios-americanfootball",
+            "11345012",
+            "GulfNow"
+        ],
+        [
+            {
+                "child": true,
+                "selectable":true
+            },
+            "Own or Lease 2+ Vehicles - Exp 2+",
+            "ion-cash",
+            "61345012",
+            "Experian Auto"
+        ],
+        [
+            {
+                "child": true,
+                "checkbox": "draft"
+            },
+            "Not Selectable - Draft Segments cannot be selected",
+            "ion-android-home",
+            "11345012",
+            "GulfNow"
+        ],
+        [
+            {
+                "checkbox": "draft"
+            },
+            "Not Selectable - Draft Segments cannot be selected",
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio amet voluptates",
+            "ion-model-s",
+            "10,342,012",
+            "Experian",
+            "9/12/2014",
+            "Spotlight"
+        ],
+        [
+            {},
+            "A row with no child rows",
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio amet voluptates",
+            "ion-model-s",
+            "10,342,012",
+            "Experian",
+            "9/12/2014",
+            "Spotlight"
+        ],
+        [
+            {
+                "parent": true,
+                "childNo": 3
+            },
+            "Open parent without selection. No checkboxes for child rows.",
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio amet voluptates",
+            "ion-android-home",
+            "10,342,012",
+            "Experian",
+            "9/12/2014",
+            "Spotlight"
+        ],
+        [
+            {
+                "child": true,
+                "selectable":true,
+                "checkbox": "none"
+            },
+            "Number of adults in living unit (2 adults)",
+            "ion-cash",
+            "61345012",
+            "Experian Auto"
+        ],
+        [
+            {
+                "child": true,
+                "selectable":true,
+                "checkbox": "none"
+            },
+            "MOR Bank: Upscale Merchandise Buyer (purchased 1+ times)",
+            "ion-ios-americanfootball",
+            "11345012",
+            "GulfNow"
+        ],
+        [
+            {
+                "child": true,
+                "selectable":true,
+                "checkbox": "none"
+            },
+            "Own or Lease 2+ Vehicles - Exp 2+",
+            "ion-cash",
+            "61345012",
+            "Experian Auto"
+        ]
+    ]
+}
